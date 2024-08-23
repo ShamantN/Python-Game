@@ -27,7 +27,7 @@ PLAYER_YELLOW = ""
 PLAYER_RED = ""
 pie=math.pi
 
-INPUT = os.path.abspath("C:\\Users\\shama\\GameProject\\Tally.csv")
+INPUT = os.path.abspath("C:\\Users\\shama\\OneDrive\\Desktop\\Python-Game\\Tally.csv")
 FILES_ = open(INPUT, "r+")
 READER_ = csv.reader(FILES_)
 DATA_ = list(READER_)
@@ -164,7 +164,7 @@ def help_index():
    messagebox.showinfo("Help", "If any errors with game, contact developers")
    Q2=messagebox.askyesnocancel("Trouble-Shooting", 'Do you have any questions or problems with the game?')
    if Q2==True:
-      messagebox.showinfo("Contact Developers", " Satwik Kulkarni [Team Representative] : PES1UG23CS528 \n Kovid Ghiya : PES1UG23ME027 \n Shamant Nagabhushana : PES1UG23CS536 \n Samarth H : PES1UG23AM261")
+      messagebox.showinfo("Contact Developers", " \n Shamant Nagabhushana : PES1UG23CS536 ")
    elif Q2==False:
       messagebox.showinfo("Thank You", "Thank you for playing and testing our game.")
    else:
@@ -377,7 +377,7 @@ def stats():
         table.pack(padx=10, pady=10)
 
     if __name__ == "__main__":
-        INPUT = abspath("C:\\Users\\shama\\GameProject\\Tally.csv")
+        INPUT = abspath("C:\\Users\\shama\\OneDrive\\Desktop\\Python-Game\\Tally.csv")
         csv_data = read_csv(INPUT)
         display_csv_table(csv_data, root)
 
@@ -388,24 +388,6 @@ def credits():
 
     credits_text = [
         "PES  Python Project",
-        "",
-        "Developer-1: SHAMANT NAGABHUSHANA",
-        "Developer-2: KOVID GHIYA",
-        "Graphics & Game: SHAMANT NAGABHUSHANA",
-        "Start Menu & Game Tally : KOVID GHIYA",
-        "End Screen Menu : Co-Developed by SHAMANT AND KOVID"
-        "",
-        "BG Image, Spaceship Images : SELF DESIGNED",
-        "",
-        "Music : AUDIO FILES FROM INTERNET",
-        "",
-        "Special Thanks:",
-        "    - Pygame Developers",
-        "    - SHAMANT",
-        "    - KOVID",
-        "    - SATWIK",
-        "    - SAMARTH",
-
     ]
 
     for line in credits_text:
